@@ -27,9 +27,9 @@
           <span></span>
         </button>
         <div class="nav-links" data-nav-links>
-          <a href="#profile">Profile</a>
           <a href="#experience">Experience</a>
           <a href="#documents">Documents</a>
+          <a href="#articles">Articles</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
@@ -43,13 +43,14 @@
           <h1 id="hero-title">Enrique Nieto</h1>
           <p class="hero-copy">Enrique Nieto is an economist with experience in power and gas markets.</p>
           <p class="hero-note">
-            His professional archive brings together selected documents, research, dashboards, code, and experience in energy-market intelligence.
+            Enrique works at the intersection of economic analysis, energy market fundamentals, and data products. His focus is to organize complex
+            market information into material that can support investment, commercial, and strategic decisions.
           </p>
           <div class="hero-actions" aria-label="Portfolio actions">
             <a class="button button-primary" href="#documents">Documents</a>
             <a class="button button-secondary" href="#experience">Experience</a>
             <a class="button button-secondary" href="https://www.linkedin.com/in/enrique-nieto/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="button button-secondary" href="#github">GitHub</a>
+            <a class="button button-secondary" href="https://github.com/EnriqueNietoB" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
         <aside class="hero-panel" aria-label="Portfolio snapshot">
@@ -59,25 +60,6 @@
             <p>BESS, market design, nodal prices, regulation, and investment signals across Latin American energy markets.</p>
           </div>
         </aside>
-      </section>
-
-      <section class="section profile-section" id="profile">
-        <div class="section-inner two-column">
-          <div class="section-heading">
-            <p class="section-kicker">Profile</p>
-            <h2>A discreet professional record for market work, documents, and analysis.</h2>
-          </div>
-          <div class="profile-copy">
-            <p>
-              Enrique works at the intersection of economic analysis, energy market fundamentals, and data products. His focus is to organize complex
-              market information into material that can support investment, commercial, and strategic decisions.
-            </p>
-            <p>
-              The portfolio below is designed to grow over time: thesis work, public documents, dashboards, GitHub repositories, and a timeline of roles
-              across energy companies and market-intelligence platforms.
-            </p>
-          </div>
-        </div>
       </section>
 
       <section class="section" id="experience">
@@ -137,20 +119,37 @@
           <div class="section-heading split-heading">
             <div>
               <p class="section-kicker">Documents</p>
-              <h2>Document Archive</h2>
+              <h2>Documents and Research</h2>
             </div>
             <p>
-              A place to collect public work, PDFs, research notes, market briefs, and presentations. The thesis placeholder is ready for the 2019 file.
+              Public work, PDFs, research notes, market briefs, and presentations. The thesis link is ready for the undergraduate PDF once uploaded.
             </p>
           </div>
           <div class="document-list">
             <article class="document-row">
               <div>
                 <span class="doc-year">2019</span>
-                <h3>Economics Thesis</h3>
-                <p>Planned upload for the thesis you wrote in 2019.</p>
+                <h3>Undergraduate Thesis</h3>
+                <p>Original Spanish thesis and English portfolio edition for download as PDFs.</p>
               </div>
-              <a class="row-link inactive-link" href="#contact" aria-label="Thesis upload planned">Upload planned</a>
+              <div class="download-actions">
+                <a
+                  class="row-link"
+                  href="documents/enrique-nieto-undergrad-thesis-2019-es.pdf"
+                  download
+                  aria-label="Download Enrique Nieto undergraduate thesis original Spanish PDF"
+                >
+                  Spanish PDF
+                </a>
+                <a
+                  class="row-link"
+                  href="documents/enrique-nieto-undergrad-thesis-2019-en.pdf"
+                  download
+                  aria-label="Download Enrique Nieto undergraduate thesis English portfolio edition PDF"
+                >
+                  English PDF
+                </a>
+              </div>
             </article>
             <article class="document-row">
               <div>
@@ -167,6 +166,45 @@
                 <p>Slides, investor briefs, and market summaries that can be linked as PDFs or hosted documents.</p>
               </div>
               <a class="row-link inactive-link" href="#contact" aria-label="Presentations placeholder">Add files</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="articles">
+        <div class="section-inner">
+          <div class="section-heading compact-heading">
+            <p class="section-kicker">Articles</p>
+            <h2>Selected Articles</h2>
+          </div>
+          <div class="article-grid">
+            <article class="article-card">
+              <p class="project-type">pv magazine Mexico / 2020</p>
+              <h3>Las implicaciones economicas del almacenamiento electrico</h3>
+              <p>
+                Opinion article on how regulation can recognize the economic and technical value of electric storage in Mexico's power system.
+              </p>
+              <a
+                href="https://www.pv-magazine-mexico.com/2020/11/26/las-implicaciones-economicas-del-almacenamiento-electrico/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Read article
+              </a>
+            </article>
+            <article class="article-card">
+              <p class="project-type">Medium</p>
+              <h3>Perspectives on the Battery Storage in the United States</h3>
+              <p>
+                Commentary on battery storage in the United States and the market context for energy-storage deployment.
+              </p>
+              <a
+                href="https://enriquenieto18.medium.com/perspectives-on-the-battery-storage-in-the-united-states-174338e62b55"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Read article
+              </a>
             </article>
           </div>
         </div>
@@ -191,13 +229,13 @@
               <p class="project-type">Dashboard</p>
               <h3>Chile MEM Dashboard</h3>
               <p>Local dashboard for marginal-cost imports, demand files, macro-zone analysis, and nodal price exploration.</p>
-              <a href="../Chile%20MEM/index.html">Open local project</a>
+              <a class="inactive-link" href="#projects">Public link planned</a>
             </article>
             <article class="project-card">
               <p class="project-type">Dashboard</p>
               <h3>Mexico MEM Dashboard</h3>
               <p>Local dashboard for CENACE MDA data, PML maps, demand curves, regional spreads, and automated market reads.</p>
-              <a href="../Mexico%20MEM/index.html">Open local project</a>
+              <a class="inactive-link" href="#projects">Public link planned</a>
             </article>
           </div>
         </div>
@@ -211,8 +249,7 @@
           </div>
           <div class="github-card">
             <p>
-              Add Enrique's GitHub profile URL here when ready. This section can feature pinned repositories for dashboards, data parsers, market models,
-              or thesis replication files.
+              Enrique's GitHub profile can feature pinned repositories for dashboards, data parsers, market models, or thesis replication files.
             </p>
             <div class="repo-list" aria-label="Planned repository categories">
               <span>Market dashboards</span>
@@ -220,7 +257,7 @@
               <span>BESS analytics</span>
               <span>Thesis files</span>
             </div>
-            <a class="button button-primary inactive-button" href="#github">Add GitHub URL</a>
+            <a class="button button-primary" href="https://github.com/EnriqueNietoB" target="_blank" rel="noreferrer">View GitHub profile</a>
           </div>
         </div>
       </section>
@@ -233,7 +270,7 @@
           </div>
           <div class="contact-actions">
             <a class="button button-primary" href="https://www.linkedin.com/in/enrique-nieto/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="button button-secondary" href="#github">GitHub</a>
+            <a class="button button-secondary" href="https://github.com/EnriqueNietoB" target="_blank" rel="noreferrer">GitHub</a>
             <a class="button button-secondary" href="#documents">Documents</a>
           </div>
         </div>

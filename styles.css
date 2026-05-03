@@ -340,7 +340,7 @@ img {
   position: absolute;
   top: 14px;
   bottom: 14px;
-  left: 156px;
+  left: 5px;
   width: 1px;
   background: var(--line);
 }
@@ -348,7 +348,7 @@ img {
 .timeline-item {
   position: relative;
   display: grid;
-  grid-template-columns: 126px 24px minmax(0, 1fr);
+  grid-template-columns: 24px minmax(150px, 190px) minmax(0, 1fr);
   gap: 18px;
   align-items: start;
 }
@@ -364,15 +364,17 @@ img {
 }
 
 .timeline-meta {
-  padding-top: 10px;
+  padding-top: 12px;
   color: var(--subtle);
   font-size: 0.82rem;
   font-weight: 800;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
 .timeline-card,
 .project-card,
+.article-card,
 .github-card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -437,17 +439,30 @@ img {
   font-weight: 820;
 }
 
+.download-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
 .inactive-link {
   color: var(--subtle);
 }
 
-.project-grid {
+.project-grid,
+.article-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
 }
 
-.project-card {
+.article-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-card,
+.article-card {
   min-height: 300px;
   display: flex;
   flex-direction: column;
@@ -455,7 +470,8 @@ img {
   background: var(--panel);
 }
 
-.project-card a {
+.project-card a,
+.article-card a {
   margin-top: auto;
   padding-top: 28px;
 }
@@ -526,7 +542,8 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .project-grid {
+  .project-grid,
+  .article-grid {
     grid-template-columns: 1fr;
   }
 
@@ -624,6 +641,10 @@ img {
 
   .document-row {
     grid-template-columns: 1fr;
+  }
+
+  .download-actions {
+    justify-content: flex-start;
   }
 
   .site-footer {
