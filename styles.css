@@ -227,7 +227,7 @@ a {
 .card p,
 .timeline-card p,
 .work-summary p,
-.work-point p {
+.impact-list span {
   margin: 0;
   color: var(--muted);
 }
@@ -259,11 +259,11 @@ a {
 
 .work-showcase {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 34px;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 28px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 24px;
+  padding: 22px;
   background: var(--panel);
 }
 
@@ -273,32 +273,35 @@ a {
 }
 
 .work-summary h3 {
-  font-size: 1.45rem;
+  font-size: 1.32rem;
 }
 
-.work-points {
+.impact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px 24px;
+  gap: 12px;
 }
 
-.work-point {
+.impact-list li {
+  display: grid;
+  grid-template-columns: minmax(120px, 0.36fr) minmax(0, 1fr);
+  gap: 16px;
+  padding-top: 12px;
   border-top: 1px solid var(--line);
-  padding-top: 16px;
 }
 
-.work-point span {
-  display: block;
-  margin-bottom: 10px;
+.impact-list strong {
   color: var(--accent);
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   font-weight: 850;
 }
 
-.work-point h4 {
-  margin: 0 0 8px;
-  font-size: 1rem;
-  line-height: 1.22;
+.impact-list span {
+  display: block;
+  font-size: 0.94rem;
+  line-height: 1.45;
 }
 
 .link-group {
@@ -309,12 +312,17 @@ a {
 }
 
 .link-group a,
-.card a {
+.card a,
+.timeline-card a {
   width: fit-content;
   border-bottom: 1px solid currentColor;
   color: var(--accent-strong);
   font-size: 0.92rem;
   font-weight: 820;
+}
+
+.timeline-card h3 a {
+  font-size: inherit;
 }
 
 .card-grid {
@@ -463,8 +471,9 @@ a {
     font-size: 1.86rem;
   }
 
-  .work-points {
+  .impact-list li {
     grid-template-columns: 1fr;
+    gap: 4px;
   }
 
   .timeline-item {
